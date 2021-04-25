@@ -1,0 +1,127 @@
+body{
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Nanum Gothic';
+}
+h1{
+  font-family: 'Jua';
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+section{
+  width: 60vw;
+}
+#place_for_messages{
+  display: none;
+}
+/* la création d'une bulle de text */
+.bubble-speech{
+  height: 15vh;
+  background: #549F93;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #FFF;
+  letter-spacing: 1px;
+}
+.bubble-speech:before {
+    position: absolute;
+    top: 7.4rem;
+    /* top: 7rem; */
+    left: 15.5rem;
+    content: '';
+    border-top: 1.5rem solid #549F93;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    transform: rotate(-26deg);
+    /* transform: rotate(-30deg); */
+  }
+
+/* le aside avec le compteur du score global */
+/* #countDown{
+  float: left;
+} */
+#star_score{
+  float:right;
+  margin: 2rem;
+}
+/* les icons */
+.fas{
+  margin: 5rem;
+  border: 1px solid #f1ddcf;
+  border-radius: 5px;
+}
+.fas:hover{
+  opacity: .9;
+  scale: 1.5;
+}
+/* cacher les icons des nurriture et activités */
+/* .some{
+  visibility: hidden;
+} */
+
+#yourSumScore{
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*FONTAWESOME*/
+.fa-ice-cream{
+  color:deeppink;
+}
+
+.fa-pepper-hot{
+  color:red;
+}
+.fa-fish{
+  color:blue;
+}
+.fa-carrot{
+  color:orange;
+}
+.fa-pizza-slice{
+  color:salmon;
+}
+.fa-baseball-ball{
+  color:purple;
+}
+.fa-bed{
+  color: green;
+}
+.fa-music{
+  color:goldenrod;
+}
+/* nouvelle bar de progression test */
+#myProgress,
+#weightProgressBar,
+#statusProgressBar{
+  width: 90%;
+  background-color: #ddd;
+  height: 7vh;
+  border-radius: .4rem;
+}
+#myBar,
+#weightBar,
+#statusBar{
+  width: 5%;
+  height: 7vh;
+  background-color: #4CAF50;
+  border-radius: .4rem;
+}
+#choose_food,
+#choose_activity{
+  display: none;
+
+  height: 20vh;
+}
+#game_rules{
+  width: 50vw;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
